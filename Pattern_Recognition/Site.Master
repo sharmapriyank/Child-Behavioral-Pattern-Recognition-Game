@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.Master.cs" Inherits="Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head id="Head1" runat="server">
+    <title>ALPHA</title>
+    <link href="Style/Styles.css" rel="stylesheet" />
+      
+    <style type="text/css">
+        .style1
+        {
+            width: 1118px;
+            height: 73px;
+        }
+    </style>
+      
+</head>
+<body>
+    <form id="frmForm" runat="server">
+    <div class="master-wrapper-page">
+        <div class="master-wrapper-content">
+         
+             <asp:ContentPlaceHolder ID="header" runat="server">
+                 <div class="header">
+                     <div class="logo1">
+                         <h1 style="color:black; padding:5px;">
+                             <img alt="Letter2Meaning" class="style1" src="images/head.png" /></h1>
+                     </div>
+                     <div class="languageselector">
+                     </div>
+                     <div class="links">
+                         <a href="/login.aspx">Logout</a>
+                     </div>
+                     <div class="login-info">
+                     </div>
+                 </div>
+                 <div class="clear">
+                 </div>
+            </asp:ContentPlaceHolder>
+          
+            <div class="content">
+                <div class="cph">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </div>
+
+            <div class="footer">
+                
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
